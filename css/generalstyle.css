@@ -1,0 +1,407 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                General Style                 */
+/*~ ------------------------------------------ ~*/
+
+/*  Aplicable for all   */
+body {
+    font-family: var(--primary-font);
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: black;
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--varton-pinfont-med);
+    font-size: 3rem;
+    text-align: center;
+}
+
+li { list-style: none; }
+img { width: 100%; }
+input { 
+    accent-color: var(--primary-color);
+    background-color: #F1F1F1;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+input:focus { 
+    font-family: var(--varton-pinfont-med);
+    background-color: var(--varton-pincol-lighter);
+    outline: 0;
+}
+button {
+    height: 2.875rem;
+    width: 7.5rem;
+
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    color: white;
+
+    border: 0;
+    border-radius: 0.75rem;
+    background-color: var(--primary-color);
+}
+.selected
+{ background-color: var(--secondary-color); }
+button:active 
+{ background-color: var(--secondary-color); }
+/**/
+/* CLASSES */
+.hide { display: none; }
+
+.bold { font-family: var(--varton-pinfont-med); }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.makeme-row { flex-direction: row; }
+.center-flex {
+    align-items: center;
+    justify-content: center;
+}
+.style-myli {
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+/**/
+/*  -----------------   */
+
+/* HEADER */
+header {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2.5rem;
+}
+.top-header {
+    margin: 0 2rem;
+    height: 10rem; 
+    width: 28rem;
+}
+h1 { font-size: 3.125rem; }
+h1 span { color: var(--primary-color); }
+
+.newsletter-div {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+.newsletter-div picture { width: 60%; }
+.newsletter-div .container {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-div .container div { 
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.newsletter-div p { font-size: 1.125rem; }
+
+    /* Top-Form */
+    .newsletter-topform 
+    { position: relative; height: 20%; }
+    .newsletter-topform ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .newsletter-topform ul li 
+    { display: flex; }
+    .newsletter-topform input {
+        width: 60%;
+        height: 2.25rem;
+
+        padding-left: 1rem;
+    }
+    .newsletter-topform input[type="checkbox"] 
+    { width: 5%; }
+
+    .newsletter-topform button {
+        width: 30%;
+        height: 2.625rem;
+
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        color: var(--primary-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        position: absolute;
+        top: -2px;
+        right: 0;
+    }
+    .newsletter-topform button:active 
+    {
+        background-color: var(--secondary-color);
+        border: 0;
+        color: white;
+    }
+    /* -------- */
+/* HEADER END           */
+/* --------------------- */
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+h3 { 
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* ---- */
+
+/*  ACTIVITIES  */
+.activities div {
+    display: flex;
+    align-items: center;
+}
+.activities div article {
+    width: 16rem;
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+
+    text-align: center;
+}
+.activities div article img 
+{ height: 35%; }
+/* ACTIVITIES END        */
+/* --------------------- */
+
+/*  GUESTS      */
+.guests { position: relative; }
+.guests .carousel {
+    padding: 0 2.75rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+
+    border: 2px var(--primary-color) dotted;
+}
+    /* CARDS */
+    .guest-card {
+        height: 27.75rem;
+        width: 22rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+    }
+        /* hover */
+    .guest-card:hover {
+        box-shadow: 4px 4px 2px rgba(0, 224, 143, 0.40);
+    }
+    .guest-card:hover div {
+        box-shadow: inset 444px 4px 2px rgba(0, 224, 143, 0.40);
+    }
+        /**/
+    .guest-card picture {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .guest-card div {
+        height: 45%;
+        width: 100%;
+        padding: 1.25rem 3.375rem;
+        border: 2px solid var(--primary-color);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        position: absolute;
+        bottom: 0;
+        z-index: -5;
+    }
+    .guest-card div h3 
+    { font-family: var(--varton-pinfont-med); }
+    .guest-card div button {
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+
+        position: absolute;
+        bottom: 0.625rem;
+        right: 1.25rem;
+
+        font-size: 1.2rem;
+        font-family: var(--varton-pinfont-med);
+        color: black;
+        text-align: end;
+    }
+    /**/
+/* GUESTS END        */
+/* --------------------- */
+
+/*  SERIES  */
+.series .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.series .filters { 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.series .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.caratule-card 
+{ height: 25rem; /*width: 16.25rem;*/ }
+.caratule-card img { height: 100%;}
+/* SERIES END        */
+/* --------------------- */
+
+/*  MIDDLE FORM           */
+.newsletter-middleform 
+{ position: relative; width: 60%; }
+.newsletter-middleform ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.newsletter-middleform ul li 
+{ display: flex; }
+.newsletter-middleform input {
+    width: 74%;
+    height: 2.25rem;
+
+    padding-left: 1rem;
+}
+.newsletter-middleform input[type="checkbox"] 
+{ width: 3%; }
+
+.newsletter-middleform button {
+    width: 20%;
+    height: 2.625rem;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+.newsletter-middleform button:active 
+{
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+/* MIDDLE FORM END        */
+/* --------------------- */
+
+/*  LOCATION    */
+.location .container {
+    width: 90%;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+.location .text h3 { 
+    text-align: start;
+    font-size: 2.25rem; 
+    font-family: var(--varton-pinfont-light);
+}
+.location .text {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.location .text .site {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.location .text .site address p {
+    display: flex;
+    flex-direction: column;
+}
+/* LOCATION END        */
+/* --------------------- */
+
+/*  FOOTER  */
+footer h2 { border-bottom: 2px solid black;}
+footer {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+footer .content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .item1, footer .item2 { width: 48%; }
+footer div.item1 { justify-content: end; }
+footer div.item2 { justify-content: start; }
+footer .item1 img, footer .item2 img 
+{ width: 50%; }
+
+.item3, .item4, .item5, .item6, .item7 
+{ width: 16%; }
+.item8, .item9, .item10, .item11, .item12 
+{ width: 18%; }
+
+/* FOOTER END        */
+/* --------------------- */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
