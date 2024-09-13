@@ -1,364 +1,134 @@
 <!DOCTYPE html>
-<html lang="ca">
-    <head>
-        <title>La serietúlia</title>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- META -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/type.css">
-
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-        <link rel="stylesheet" href="css/generalstyle.css">
-        <link rel="stylesheet" href="css/mediastyle.css">
-
-        <!-- Favicon -->
-        <link rel="icon" type="image/svg" sizes="32x32" href="media/logo/LaSerietulia-TR-cuadrado.svg">
-
-        <!-- JS Resources -->
-        <script src="js/jQuery.min.js"></script>
-        <script src="js/app.js" type="module"></script>
-    </head>
-    <body>
-        <!-- HEADER -->
-        <!-- #region -->
-        <header>
-            <div class="top-header">
-                <img src="media/logo/LaSerietulia-h.svg" alt="Logo LaSerietulia">
-            </div>
-            <div class="newsletter-div">
-                <picture>
-                    <source srcset="
-                            media/img/cabecera/victoria-kubiaki-yeFJNtA3604-unsplash@1x.jpg,
-                            media/img/cabecera/victoria-kubiaki-yeFJNtA3604-unsplash@2x.jpg 2x,
-                            media/img/cabecera/victoria-kubiaki-yeFJNtA3604-unsplash@3x.jpg 3x">
-                    <img src="media/img/cabecera/victoria-kubiaki-yeFJNtA3604-unsplash@3x.jpg" alt="Imatge d'un televisor cubic">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script async type="module" src="js/app.js"></script>
+    <title>LaSerietulia</title>
+</head>
+<body>
+    <header>
+        <img  class="img_logo" src="img/logo/LaSerietulia-TR-horizontal_editado.png" alt="Festival de series Barcelona">
+        <div class="img_text_div">
+            
+                <picture class="img_firts">
+                    <source  srcset="img/victoria-kubiaki-yeFJNtA3604-unsplash 1.jpg,
+                    img/victoria-kubiaki-yeFJNtA3604-unsplash 1@2x.jpg 2x,
+                    img/victoria-kubiaki-yeFJNtA3604-unsplash 1@3x.jpg 3x">
+                    <img src="img/victoria-kubiaki-yeFJNtA3604-unsplash 1@3x.jpg" alt="victoria-kubiaki">
                 </picture>
-                <div class="container">
-                    <div>
-                        <h1>
-                            Maníacs de les sèries? 
-                            <span>
-                                Teniu una cita ineludible.
-                            </span>
-                        </h1>
-                        <p>
-                            Els pròxims 22 i 23 de novembre tens una cita que no pots deixar perdre. Passa't a compartir la teva passió pel setè art "de sofà" amb uns convidats excepcionals.
-                        </p>
+            <div class="text_div">
+                <h1>Maníacs de les sèries? <span class="azul_remark">Teniu una cita ineludible.</span></h1>
+                <p>Els pròxims 18 i 19 de novembre tens una cita que no pots deixar sperdre. Passa't a compartir la teva passió pel setè art "de sofà" amb uns convidats excepcionals.</p>
+                <form class="form_newsletter" action="send_form">
+                    <input class="email_in" type="email" placeholder="email">
+                    <div class="politica_pirvacidad">
+                         <input class="input_box" type="checkbox"> <p>He llegit i accepto la <a class="privacidad_" href="#">Politica de privacidad</a></p>
+                       
                     </div>
-                    <form id="newsletter-topform" name="newsletter-topform" method="post" class="newsletter-topform">
-                        <ul>
-                            <li>
-                                <input id="top-email" 
-                                    type="email" name="email"
-                                    placeholder="Afegeix el teu email" required>
-                            </li>
-                            <li class="style-myli">
-                                <input id="top-checkbox" 
-                                    type="checkbox" name="condiciones" required
-                                    checked>
-                                <label for="top-checkbox">
-                                    He llegit i accepto la 
-                                    <a href="#">política de privacitat</a>
-                                </label>
-                            </li>
-                            <li>
-                                <button type="submit">
-                                    Alta Newsletter
-                                </button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </header>
-        <!-- #endregion -->
-
-        <!-- MAIN CONTENT-->
-        <!-- #region -->
-        <main>
-            <section class="activities">
-                <h2>Activitats dins del festival</h2>
-
-                <div>
-                    <article>
-                        <img src="media/icons/taza.svg" alt="Icona d'una taza">
-                        <h3>Taules rodones</h3>
-                    </article>
-                    <article>
-                        <img src="media/icons/projector.svg" alt="Icona d'una camera">
-                        <h3>Projecció de sèries</h3>
-                    </article>
-                    <article>
-                        <img src="media/icons/debats.svg" alt="Icona d'unes bombolles de dialeg">
-                        <h3>Debats amb els convidats</h3>
-                    </article>
-                    <article>
-                        <img src="media/icons/idcard.svg" alt="Icona d'un document identificatiu">
-                        <h3>Serietúlia Pro</h3>
-                    </article>
-                </div>
-            </section>
-
-            <section class="guests">
-                <div class="header">
-                    <h2>Convidats de luxe</h2>
-                    <h3>
-                        Actors, actrius i guionistes convidats a les xerrades i debats en el visionament de capítols emblemàtics que es durà a terme a la Filmoteca.
-                    </h3>
-                </div>
-                <div id="guests" class="carousel owl-carousel">
-
-                    <!-- Template article -->
-                    <article class="guest-card">
-                        <picture>
-                            <source srcset="
-                                    media/img/invitados/Phoebe-Waller-Bridge@1x.jpg,
-                                    media/img/invitados/Phoebe-Waller-Bridge@2x.jpg 2x,
-                                    media/img/invitados/Phoebe-Waller-Bridge@3x.jpg 3x">
-                            <img src="media/img/invitados/Phoebe-Waller-Bridge@3x.jpg"
-                                alt="Fotografia de una persona">
-                        </picture>
-                        <div>
-                            <h3>
-                                Placeholdername and Lastname
-                            </h3>
-                            <p>
-                                Creadora, guionista i actriu. Killing Eve i Fleabag els seus referents.
-                            </p>
-                            <button type="button">
-                                VEURE BIOGRAFIA
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="guest-card">
-                        <picture>
-                            <source srcset="
-                                    media/img/invitados/Phoebe-Waller-Bridge@1x.jpg,
-                                    media/img/invitados/Phoebe-Waller-Bridge@2x.jpg 2x,
-                                    media/img/invitados/Phoebe-Waller-Bridge@3x.jpg 3x">
-                            <img src="media/img/invitados/Phoebe-Waller-Bridge@3x.jpg"
-                                alt="Fotografia de una persona">
-                        </picture>
-                        <div>
-                            <h3>
-                                Placeholdername and Lastname
-                            </h3>
-                            <p>
-                                Creadora, guionista i actriu. Killing Eve i Fleabag els seus referents.
-                            </p>
-                            <button type="button">
-                                VEURE BIOGRAFIA
-                            </button>
-                        </div>
-                    </article>
-                    <!-- **************** -->
-
-                </div>
-            </section>
-
-            <section class="series">
-                <div class="header">
-                    <h2>Les millors sèries</h2>
-                    <h3>
-                        Troba les sèries que projectarem al festival a la teva plataforma.
-                    </h3>
-                </div>
-                <div class="container">
-                    <div class="filters">
-                        <button class="selected" filter-name="*">Totes</button>
-                        <button filter-name="HBO-Max">HBO Max</button>
-                        <button filter-name="Netflix">Netflix</button>
-                        <button filter-name="Filmin">Filmin</button>
-                        <button filter-name="Prime">Prime</button>
-                        <button filter-name="Disney+">Disney+</button>
-                        <!-- Uncoment these for more filters -->
-                        <!-- <button filter-name="Fantasia">Fantasia</button>
-                        <button filter-name="Comedia">Comèdia</button>
-                        <button filter-name="Drama">Drama</button>
-                        <button filter-name="Misteri">Misteri</button> -->
-                    </div>
-                    <div class="content">
-                        <div class="caratule-card" filter-by="Netflix Prime Comedia">
-                            <picture>
-                                <img src="media/img/series/the-office.jpg" 
-                                    alt="Caratula de la serie 'The office'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Netflix Prime Filmin Drama">
-                            <picture>
-                                <img src="media/img/series/luther.jpg" 
-                                    alt="Caratula de la serie 'Luther'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="HBO-Max Prime Netflix Disney+ Misteri">
-                            <picture>
-                                <img src="media/img/series/killing-eve.jpg" 
-                                    alt="Caratula de la serie 'Killing Eve'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Prime Filmin Drama">
-                            <picture>
-                                <img src="media/img/series/halt-and-catch-fire.jpg" 
-                                    alt="Caratula de la serie 'Halt and catch fire'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Prime HBO-Max Comedia">
-                            <picture>
-                                <img src="media/img/series/girls.jpg" 
-                                    alt="Caratula de la serie 'Girls'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Prime Comedia">
-                            <picture>
-                                <img src="media/img/series/fleabag.jpg" 
-                                    alt="Caratula de la serie 'Fleabag'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Disney+ Prime Fantasia">
-                            <picture>
-                                <img src="media/img/series/firefly.jpg" 
-                                    alt="Caratula de la serie 'Firefly'">
-                            </picture>
-                        </div>
-                        <div class="caratule-card" filter-by="Disney+ Prime Netflix Misteri">
-                            <picture>
-                                <img src="media/img/series/castle.jpg" 
-                                    alt="Caratula de la serie 'Castle'">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="middle-newsletter">
-                <h2>Vols rebre informació?</h2>
-                <form id="newsletter-middleform" 
-                    class="newsletter-middleform" 
-                    name="newsletter-middleform" 
-                    method="post">
-                    <ul>
-                        <li>
-                            <input id="middle-email" 
-                                name="email" type="email" 
-                                placeholder="Afegeix el teu email" required>
-                        </li>
-                        <li class="style-myli">
-                            <input id="middle-checkbox" 
-                                name="condiciones" type="checkbox" required>
-                            <label for="middle-checkbox">
-                                He llegit i accepto la 
-                                <a href="#">política de privacitat</a>
-                            </label>
-                        </li>
-                        <li>
-                            <button type="submit">
-                                Alta Newsletter
-                            </button>
-                        </li>
-                    </ul>
+                    <button class="button_newsletter" type="submit">Alta Newsletter</button>
                 </form>
-            </section>
-
-            <section class="location">
-                <h2>Espais i dates</h2>
-                <div class="container">
-                    <div class="load-map">
-                        <img src="media/img/mapa.png" alt="Imagen de sustitucion, agregar mapa">
-                    </div>
-                    <div class="text">
-                        <h3>22 i 23 de novembre</h3>
-                        <div class="site">
-                            <p class="bold">Filmoteca de Catalunya</p>
-                            <address>
-                                <p>
-                                    Plaça Salvador Seguí, 1 - 9
-                                    <span>
-                                        08001 Barcelona
-                                    </span>
-                                </p>
-                            </address>
-                        </div>
-                        <div class="site">
-                            <p class="bold">Restaurant «La Monroe»</p>
-                            <address>
-                                <p>
-                                    Plaça Salvador Seguí
-                                    <span>
-                                        08001 Barcelona
-                                    </span>
-                                </p>
-                            </address>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- #endregion -->
-
-        <!-- FOOTER -->
-        <!-- #region -->
-        <footer>
-            <h2>Patrocinadors i col·laboradors</h2>
-            <div class="content">
-                <div class="item1">                    
-                    <img src="media/img/patrocinadores/Logo_Etrella-Dawn.svg" alt="Logo Etrella-Dawn">
-                  </div>
-                  <div class="item2"> 
-                    <img src="media/img/patrocinadores/Logo_Vichi-Catalan.svg" alt="Logo Vichi-Catalan">
-                  </div>
-                  <div class="item3">
-                    <img src="media/img/patrocinadores/Logo_HBO-Espana.svg" alt="Logo HBO-Espana">
-                  </div>
-                  <div class="item4">
-                    <img src="media/img/patrocinadores/Logo_Netflix.svg" alt="Logo Netflix">
-                  </div>
-                  <div class="item5">
-                    <img src="media/img/patrocinadores/Logo_rtve.svg" alt="Logo rtve">
-                  </div>
-                  <div class="item6">    
-                    <img src="media/img/patrocinadores/Logo_iCatFm.svg" alt="Logo iCatFm">
-                  </div>
-                  <div class="item7">
-                    <img src="media/img/patrocinadores/Logo_Time-Out.svg" alt="Logo Time-Out">
-                  </div>
-                  <div class="item8">
-                    <img src="media/img/patrocinadores/Logo_BCN-Ajuntament.svg" alt="Logo BCN-Ajuntament">
-                  </div>
-                  <div class="item9">    
-                    <img src="media/img/patrocinadores/Logo_beteve.svg" alt="Logo beteve">
-                  </div>
-                  <div class="item10">    
-                    <img src="media/img/patrocinadores/Logo_CFF.svg" alt="Logo CFF">
-                  </div>
-                  <div class="item11">
-                    <img src="media/img/patrocinadores/Logo_escac-claim.svg" alt="Logo escac-claim">
-                  </div>
-                  <div class="item12">
-                    <img src="media/img/patrocinadores/Logo_cccb.svg" alt="Logo cccb">
-                  </div>
             </div>
-        </footer>
-        <!-- #endregion -->
+        </div>
+    </header>    
+<section class="actividades">
+    <h2>Activitats dins del festival</h2>
+    <div class="container_icons">
+        <div class="icon_card">
+            <img src="img/icons/taza.svg" alt="Taules rodones">
+            <h3>Taules rodones</h3>
+        </div>
+        <div class="icon_card">
+            <img src="img/icons/projector.svg" alt="Projecció de sèries">
+            <h3>Projecció de sèries</h3>
+        </div>
+        <div class="icon_card">
+            <img src="img/icons/debats.svg" alt="Debats amb els convidats">
+            <h3>Debats amb els convidats</h3>
+        </div>
+        <div class="icon_card">
+            <img src="img/icons/idcard.svg" alt="Serietúlia Pro">
+            <h3>Serietúlia Pro</h3>
+        </div>
+    </div>
 
-        <!-- JS -->
-        <!-- #region -->
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/owlCarrousel.js"></script>
-        <script src="js/filter.js"></script>
-        <script src="js/formalidation.js"></script>
-        <!-- #endregion -->
-        <!-- NOSCRIPT -->
-        <noscript>
-            <p>
-                Sembla que JS esta bloquejat desde aquest navegador, es posible que la pagina no carregui correctament.
-            </p>
-        </noscript>
-    </body>
+</section>
+    
+<section class="invitados">
+    <div class="invidatos_texto_div">
+        <h2>Convidats de luxe</h2>
+        <p>Actors, actrius i guionistes convidats a les xerrades i debats en el visionament de capítols emblemàtics que es durà a terme a la Filmoteca.</p>
+    </div>
+    <div class="root_container">
+        <div class="cards_container">
+            
+        </div>
+    </div>
+    
+</section>
+<section class="series-filter">
+
+       <h1>Temporal Series filtro</h1> 
+
+</section>
+
+
+<section class="last_section">
+    <div class="other_form">
+        <h2>Vols rebre informació?</h2>
+        <form class="form_newsletter_v2" action="send_form">
+            <input class="email_in" type="email" placeholder="email">
+            <div class="politica_pirvacidad">
+                 <input class="input_box" type="checkbox"> <p>He llegit i accepto la <a class="privacidad_" href="#">Politica de privacidad</a></p>
+               
+            </div>
+            <button class="button_newsletter_other" type="submit">Alta Newsletter</button>
+        </form>
+    </div>
+    <div class="espacio_fechas">
+        <h2>Espais i dates</h2>
+        <div class="espais_main">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.3509726842867!2d2.1707182563687795!3d41.378663265908976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a258ddbbfdc7%3A0xc64386198707eec!2sPla%C3%A7a%20de%20Salvador%20Segu%C3%AD%2C%201-9%2C%20Ciutat%20Vella%2C%2008001%20Barcelona!5e0!3m2!1ses!2ses!4v1717583205706!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="espais_">
+                <h2 class="fechas">18 i 19 de novembre </h2>
+                <h3>Filmoteca de Catalunya</h3>
+                <p>Plaça Salvador Seguí, 1 - 9 08001 Barcelona</p>
+                <h3>Restaurant «La Monroe»</h3>
+                <p>Plaça Salvador Seguí 08001 Barcelona</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</section>
+
+
+
+</body>
+<footer>
+        <h1>Patrocinadors i col·laboradors</h1>
+        <div class="patrocinadores">
+            <ul class="container_pa">
+                <li class="con_patrocinadors_1"><img src="img/patrocinadores/Logo-Damm-web 1.png" alt=""></li>
+                <li class="con_patrocinadors_2"><img src="img/patrocinadores/1 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/HBOn_alpha_footer-e1530626307174 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/Netflix_Logo_footer-500x210 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/RTVE_footer-500x258 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/Logo_iCatFm-500x186 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/Time-Out_2-500x182.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/bn_ajuntament.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/Logotip_beteve_roig-1-500x136 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/CFF_Logo-Negre-RGB-500x115 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/escac_claim_white 1.png" alt=""></li>
+                <li class="con_patrocinadors"><img src="img/patrocinadores/cccb.png" alt=""></li>
+            </ul>
+
+        </div>
+</footer>
 </html>

@@ -1,0 +1,489 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+	vertical-align: baseline;
+}
+:root{
+    font-family: "Roboto", sans-serif;
+}
+/******************HEADER**************************/
+.img_firts > img, .img_logo{
+    width: 100%;
+}
+
+.text_div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+}
+
+h1{
+    font-size: 2.25rem;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 1px; 
+    padding-bottom: 2rem;
+}
+.azul_remark{
+    color: #009EE0; 
+}
+
+.form_newsletter > .politica_pirvacidad { padding: 1.5rem 0 1.5rem;}
+
+.form_newsletter
+{
+    padding-top: 2rem;
+    /* padding: 0 15px 0 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .form_newsletter .email_in .politica_pirvacidad .button_newsletter {
+    padding: 12px 0 12px 17px;
+} */
+
+.email_in{
+  padding: 0.4rem;
+  width: 100%;
+  background-color: #F1F1F1;
+  border-bottom: 0.5px solid black;
+}
+
+
+.politica_pirvacidad
+{
+    display: flex;
+    font-size: 0.875rem;
+    gap: 0.5rem;
+}
+.politica_pirvacidad a{
+    color: black;
+
+}
+.input_box{
+    cursor: pointer;    
+    background-color: #F1F1F1;
+    border: 0;
+    padding: 0.5rem;
+    
+}
+.button_newsletter
+{
+    border: 2px solid #009EE0;
+    background-color: white;
+    border-radius: 8px;
+    width: 10rem;
+    height: 2.5rem;
+    color: #009EE0;
+}
+.button_newsletter:hover
+{
+    background-color: #009EE0;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (min-width: 1200px)
+{
+    /*     Land Scape        */
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img_logo{
+        /* width: 9rem; */
+        width: 50%;   
+    }     
+    .img_text_div{
+        display: flex;
+        gap : 2.56rem;
+    }
+    .img_firts > img{
+        width: 100%;
+    }
+    .text_div > h1{
+        font-size: 3.125rem;
+        padding: 0 0 0.5rem 0;
+    }
+    .text_div > p{
+        text-align: center;
+        font-size:  1.125rem;
+        padding: 0;
+    }
+    .email_in{
+        width: 60%;
+    }
+    .form_newsletter{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding-top: 4.5rem;
+    }
+    .text_div{
+        display: flex;
+        flex-direction: column;
+    }
+    .politica_pirvacidad{
+        order: 1;
+        
+    }
+}
+
+
+/******************HeaderFin**************************/
+/************************Section actividades******************************/
+
+.actividades > h2{
+    text-align: center;
+    font-size: 2.25rem;
+   padding-bottom: 1.5rem;
+}
+.actividades{
+    padding: 2rem 0 2rem;
+}
+.container_icons{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.icon_card{
+    width: 11.25rem;
+    height: 11.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.icon_card > h3 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .actividades{
+    padding: 5.25rem 2.82rem 2rem;
+    }   
+
+    .container_icons{
+        display: flex;
+        gap: 1.875rem;
+        justify-content: space-between  ;
+    }
+}
+
+
+/***************************************************************/
+/**********************CARDS INVITADOS**************************/
+
+.invidatos_texto_div{
+    padding: 1rem 1rem 2rem 1rem ;
+}
+
+.invidatos_texto_div h2{ font-size: 2.25rem; padding-bottom: 1rem;}
+.invidatos_texto_div > *{
+    text-align: center;
+}
+
+.root_container {
+    width: 100%;  
+}
+@media only screen and (max-width: 1199px)
+{
+    .root_container {
+    
+        height: 40vh;
+        position: relative;
+        overflow: hidden;  
+    }
+
+    .cards_container{
+        display: flex;
+        position: absolute;
+        gap: 0.95rem;
+        
+        /* overflow: hidden;  */
+        padding-left:0.9rem;
+        pointer-events: none;
+        margin-right: 1.5rem;
+       
+        /******************/
+        scroll-snap-type: x mandatory;
+     /*   scroll snap horizontal css */
+        /***************/
+    }
+    .cards_container > article{
+        margin-right: 1rem;
+    }
+}
+
+
+.cards_container > article{
+    width:  14.25rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #009EE0;
+    /* margin-right: 1rem; */
+}
+.cards_container > article > h3,p{
+    text-align: center;
+    padding: 0.75rem 0;
+}
+.cards_container > article > h3{ font-size: 1.12rem;}
+
+.cards_container > article >p   {
+    padding: 0 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.cards_container > article > picture {
+    width: 100%;
+}
+.cards_container > article > picture > img{width:100%};
+/* .cards_container > article > a{ display: none;} */
+   .cards_container > article >a{
+        padding-right: 1.20rem;
+        text-align: end;
+    } 
+
+@media only screen and (max-width: 1200px) {
+    
+    .cards_container > article > a{ display: none;}
+ 
+}
+@media only screen and (min-width: 1200px)
+{
+    .invidatos_texto_div > p{
+        padding: 0 20.8125rem;
+    }
+
+    .cards_container > article >p  {
+        padding:0 3.375rem 3rem;
+    }
+
+    .root_container {
+        width: 100%;
+        position: 0;
+        padding-left:  2.125rem;
+        padding-right:  2.125rem;
+   }
+   .cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    justify-content: space-between;
+
+   }
+
+   .cards_container > article{
+        width:  20.6rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+   }
+   .cards_container > article >a {
+      /* text-align: end;
+      padding:  0 1rem 1rem 1rem; */
+        position: absolute;
+        
+        bottom: 0.9rem;
+        right: 0.9rem;
+   }    
+}
+
+
+/***************************************************************/
+/***********************Filtrar********************************/
+
+@media only screen and (max-width: 1100px) {
+    .series-filter{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .series-filter{
+        padding: 4.9375rem 0 7.1875rem;
+    }
+}
+
+.series-filter{ background-color: blanchedalmond;}
+
+/***************************************************/
+
+
+/*******************Last Section*************************/
+@media only screen and (min-width: 360px) {
+    .last_section{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2.25rem 0 4.5rem;
+        width: 100%;
+    }    
+}
+
+
+.other_form{
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.other_form > h2{
+    font-size: 2.25rem;
+    text-align: center  ;
+
+}
+
+.button_newsletter_other{
+    
+    background-color: #009EE0;
+    border-radius: 8px;
+    width: 10rem;
+    height: 2.5rem;
+    color: white;
+}
+.button_newsletter_other:hover
+{
+    cursor: pointer;
+}
+iframe {
+    width: 100%;
+    height: 19rem;
+}
+
+.espacio_fechas  > h2 {text-align: center;   font-size: 2.25rem; padding-bottom:1.3rem ;}
+.espacio_fechas > .espais_main> .espais_ >.fechas {text-align: center;   font-size: 2.25rem; padding:1.3rem 0;}
+.espacio_fechas > .espais_main > .espais_ > h3 ,p{   text-align: center;}
+.espacio_fechas > .espais_main > .espais_ > h3 {font-size: 1.125rem; padding: 1.5rem 0 0.8rem;}
+.espacio_fechas > .espais_main > .espais_ > p {font-size: 1rem; padding:  0 2rem; }
+
+
+@media only screen and (min-width: 1200px) {
+    .last_section{
+        display: flex;
+        flex-direction: column;
+        padding: 2.25rem 0 4.5rem;
+        width: 100%;
+    }
+
+    .form_newsletter_v2{
+        padding: 2rem 14.6875rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0.9rem;
+        padding-top: 4.5rem;
+    }
+    .espacio_fechas > h2 {
+        text-align: center;   font-size: 2.25rem; padding-bottom:1.3rem;
+       
+
+    }
+    .espacio_fechas > .espais_main{
+        display: flex;
+        gap: 6.5rem;
+    }
+    .espacio_fechas > .espais_main > .espais_{
+        padding: 2.16rem;
+    }
+    iframe{
+        padding: 2.16rem;
+        width: 40rem;
+        height: 22rem;
+    }
+}
+
+
+
+/***************************************************/
+
+/****************FOOTER***************************/
+footer{
+
+}
+footer > h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 0 1.5rem;
+    
+}
+
+footer > .patrocinadores{
+    
+    padding: 3rem 1.4rem 2.3rem;
+}
+.patrocinadores > .container_pa{
+    display:grid;
+
+    grid-template-columns: 50% 50%;
+    list-style: none;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1.3rem 1.05rem;
+}
+.con_patrocinadors_1 , .con_patrocinadors_2{ grid-column: 1 / 3;}
+
+.patrocinadores > .container_pa > li{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patrocinadores > .container_pa > li > img{
+    max-width: 100%;
+    max-height: 100%
+  
+}
+@media only screen and (min-width: 1200px) {
+    .patrocinadores > .container_pa{
+        display: grid;
+        
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .patrocinadores > .container_pa > .con_patrocinadors_1{
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+    .patrocinadores > .container_pa > .con_patrocinadors_2{
+        grid-column: 4/5;
+        grid-row: 1/1;
+    }
+
+}   
+
+/***************************************************/
+
+/*******************Fonts google***********************/
+.roboto-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    
+    font-weight: 400;
+    font-style: italic;
+  }
+/**************************************************/
